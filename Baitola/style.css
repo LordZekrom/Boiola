@@ -1,0 +1,99 @@
+body {
+    background-color: #b39ddb; /* Lilás mais escuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 20px solid purple; /* Dourado */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart {
+    position: relative;
+    width: 300px; /* Aumentei o tamanho do coração */
+    height: 270px; /* Aumentei o tamanho do coração */
+    background-color: #b39ddb; /* Lilás mais escuro */
+}
+
+.heart:before,
+.heart:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 150px; /* Ajustei o tamanho do coração */
+    height: 240px; /* Ajustei o tamanho do coração */
+    background-color: #d32f2f; /* Vermelho */
+    border-radius: 50px 50px 0 0;
+}
+
+.heart:before {
+    left: 150px; /* Ajustei a posição do coração */
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 20px; /* Aumentei o tamanho do texto */
+    font-weight: normal;
+    font-family: cursive;
+}
+
+.rectangle {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    border: 10px solid palevioletred;
+}
+
+.rectangle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
